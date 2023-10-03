@@ -43,9 +43,14 @@ const isNegative=(number) =>{
   if (isNegative(answer)){
     result.innerHTML= 'Division not performed. Invalid number provided. Try again'
     result.style.color = "red"
-    console.error("Error: Invalid number provided");}
+    console.error(new Error (result));}
 
+
+
+  if (isNaN(dividend) || isNaN(divider)){
+const errorMesage = 'Something critical went wrong. Please reload the page'
+  document.body.innerHTML=`<h1> ${errorMesage}<h1/>`
+  document.body.style.color= 'red'
+  console.error (new Error (errorMesage))}
 });
-
-
 
