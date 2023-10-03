@@ -30,13 +30,16 @@ result.style.color = "red"
   }
 /**
  * A function to check if a number is an integer
- * @param {*} number 
- * @returns 
+ * @param {number} number -the number to be checked
+ * @returns -true if the number is negative and false if not
  */
   function isNegative(number) {
     return number < 0;
   }
   
+  if (isNegative){
+
+  }
 
 });
 
