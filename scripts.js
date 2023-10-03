@@ -36,9 +36,10 @@ result.style.color = "red"
   function isNegative(number) {
     return number < 0;
   }
-  
-  if (isNegative){
+ //const someNumber= dividend || divider
 
+  if (isNegative){
+throw new error ('Number is Negative')
   }
 
 });
