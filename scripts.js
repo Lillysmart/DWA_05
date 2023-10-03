@@ -36,17 +36,15 @@ result.style.color = "red"
  * @returns -true if the number is negative and false if not
  */
 const isNegative=(number) =>{
-return number < 0;
-} 
+  return number < 0;
+  } 
   
-const secondNumber= divider && dividend
+  const secondNumber= divider && dividend
 
-if (isNegative(secondNumber)){
-  result.innerHTML= 'Division not performed. Invalid number provided. Try again'
-  result.style.color = "red"
-  console.error("Error: Invalid number provided");
-}
-
+  if (isNegative(secondNumber)){
+    result.innerHTML= 'Division not performed. Invalid number provided. Try again'
+    result.style.color = "red"
+    console.error("Error: Invalid number provided");
 });
 
 
