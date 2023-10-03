@@ -6,6 +6,7 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const entries = new FormData(event.target);
   const { dividend, divider } = Object.fromEntries(entries);
+  result.innerText = dividend / divider;
   result.style.color = "red"
 /**
  * A function that checks if a  number is whole or decimal number .
@@ -28,19 +29,25 @@ result.style.color = "red"
   else {
     result.style.color = ''
   }
+
 /**
  * A function to check if a number is an integer
  * @param {number} number -the number to be checked
  * @returns -true if the number is negative and false if not
  */
-  function isNegative(number) {
-    return number < 0;
-  }
- //const someNumber= dividend || divider
+const isNegative=(number) =>{
+return number < 0;
+} 
+  
+const secondNumber= divider && dividend
 
-  if (isNegative){
-throw new error ('Number is Negative')
-  }
+if (isNegative(secondNumber)){
+  result.innerHTML= 'Division not performed. Invalid number provided. Try again'
+  result.style.color = "red"
+  console.error("Error: Invalid number provided");
+}
 
 });
+
+
 
